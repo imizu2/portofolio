@@ -1,0 +1,147 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; /* Ganti dengan font pilihan Anda */
+    background-color: #f5f5dc; /* Cream color */
+    color: #333; /* Darker text for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Memastikan container berada di atas */
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    max-width: 1000px; /* Diperbesar untuk layar besar */
+    width: 100%;
+    margin-top: 20px; /* Menambahkan jarak untuk memindahkan container ke atas */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px; /* Padding diperbesar */
+}
+
+header h1 {
+    font-size: 48px; /* Ukuran teks diperbesar */
+    color: #8b4513; /* Darker shade for contrast */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Spasi diperlebar antara menu */
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 22px; /* Ukuran teks diperbesar */
+}
+
+nav ul li a.active, nav ul li a:hover {
+    color: #8b4513; /* Accent color */
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-picture img {
+    border-radius: 50%; /* Membuat gambar menjadi lingkaran */
+    width: 250px; /* Lebar gambar */
+    height: 250px; /* Tinggi gambar sama dengan lebar agar menjadi lingkaran */
+    border: 6px solid #8b4513; /* Border diperbesar */
+    margin-bottom: 30px; /* Margin diperlebar */
+    object-fit: cover; /* Memastikan gambar mengisi lingkaran tanpa distorsi */
+}
+
+.info h2 {
+    font-size: 48px; /* Ukuran teks diperbesar */
+    margin-bottom: 15px;
+}
+
+.info h2 span {
+    color: #8b4513; /* Accent color */
+}
+
+.info p {
+    font-size: 22px; /* Ukuran teks diperbesar */
+    line-height: 1.8;
+    margin-bottom: 30px; /* Margin diperbesar */
+    color: #666; /* Softer grey for text */
+}
+
+/* Social Icons */
+.social-icons {
+    margin-bottom: 30px;
+}
+
+.social-icons a {
+    color: #333;
+    font-size: 28px; /* Ukuran ikon diperbesar */
+    margin: 0 15px; /* Spasi antar ikon diperbesar */
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #8b4513; /* Hover color for icons */
+}
+
+/* Button Style */
+.btn {
+    padding: 15px 30px; /* Ukuran tombol diperbesar */
+    background-color: #8b4513;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px; /* Ukuran teks tombol diperbesar */
+    border-radius: 30px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #8b4513;
+    border: 1px solid #8b4513;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    .info h2 {
+        font-size: 36px;
+    }
+
+    .profile-picture img {
+        width: 180px;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+    }
+
+    .info p {
+        font-size: 18px;
+    }
+
+    .social-icons a {
+        font-size: 24px;
+    }
+
+    .btn {
+        font-size: 18px;
+    }
+}
